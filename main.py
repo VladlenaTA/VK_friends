@@ -23,23 +23,47 @@ def visualize(graph):
 
 def count_metrics(graph):
     print("start count metrics")
+    st = time.time()
     print(f"diameter: {nx.diameter(graph)}")
+    fn = time.time()
+    print((fn-st)/60)
+    st = time.time()
     print(f"radius: {nx.radius(graph)}")
+    fn = time.time()
+    print((fn-st)/60)
+    st = time.time()
     print(f"central_vertices: {nx.center(graph)}")
+    fn = time.time()
+    print((fn-st)/60)
+    st = time.time()
     print(f"peripheral_vertices: {nx.periphery(graph)}")
+    fn = time.time()
+    print((fn-st)/60)
 
+    st = time.time()
+    cliques = list(nx.find_cliques(graph))
+    fn = time.time()
+    print(f"cliques: {max(cliques)}")
+    print((fn-st)/60)
 
-    cliques = nx.find_cliques(graph)
-    print(f"cliques: {cliques}")
-
-
+    st = time.time()
     degree_centrality = nx.degree_centrality(graph)
-    proximity_centrality = nx.closeness_centrality(graph)
-    eigenvector_centrality = nx.eigenvector_centrality(graph)
-
+    fn = time.time()
     print(f"max_degree_centrality: {max(degree_centrality.values())}")
+    print((fn-st)/60)
+
+    st = time.time()
+    proximity_centrality = nx.closeness_centrality(graph)
+    fn = time.time()
     print(f"max_proximity_centrality: {max(proximity_centrality.values())}")
+    print((fn-st)/60)
+
+    st = time.time()
+    eigenvector_centrality = nx.eigenvector_centrality(graph, max_iter=600)
+    fn = time.time()
+
     print(f"max_eigenvector_centrality: {max(eigenvector_centrality.values())}")
+    print((fn-st)/60)
 
 
 
