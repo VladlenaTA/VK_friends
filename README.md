@@ -18,3 +18,10 @@ central_vertices: ['17958998', '33436943']
 
 peripheral_vertices: ['338885635', '6517300', '8457566', '11819316', '12400131', '34607423', '38557684', '39316838', '48425189', '53747156', '96752758', '98130254', '120493955', '136929277', '142254641', '146797123', '169437636', '278082279', '324935745', '340294063', '6249505', '192877149']
 cliques: <generator object find_cliques at 0x00000188D83AE8F0>
+
+
+![image](https://user-images.githubusercontent.com/91695607/226894732-1b824328-9782-4f66-8035-019a034f62fb.png)
+
+![image](https://user-images.githubusercontent.com/91695607/226895192-6a20a170-cf33-4641-8f47-5c1dbf0d673e.png)
+
+![image](https://user-images.githubusercontent.com/91695607/226895985-93a8d995-5312-4cd2-8bc8-f493ccb848ea.png)
